@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block body %}
+    <h1>Recording IP: {{  name }}</h1>
+    <br />
+    <ul>
+        <li>Machine name: {{ name }}</li>
+        <li>Last IP: {{ last_ip.ip }}</li>
+        <li>Last touched: {{ last_ip.last_hit|date:"r" }}</li>
+        <li>New IP: {{ new_ip }}</li>
+        <li>Time touched: {{ latest_hit|date:"r" }}</li>
+    </ul>
+{% endblock %}
