@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+{% load i18n %}
+
+<html>
+<head>
+    <title>{% block title %}IP Helper{% endblock %}</title>
+{% block stylesheets %}
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.4.4.js"></script>
+{% endblock %}
+</head>
+<body>
+{% block body %}
+{% endblock %}
+</body>
+</html>
